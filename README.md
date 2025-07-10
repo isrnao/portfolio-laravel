@@ -1,6 +1,6 @@
 # portfolio-laravel – *Free Tier Edition*
 
-> **目的**: Laravel Cloud Sandbox と Vercel (Free) を活用して個人ブログを気軽に公開するために、元設計から *無料枠では過剰* な部分をそぎ落とした最小構成のモノレポ。
+> **目的**: Vercel (Free) を活用して個人ブログを気軽に公開するために、元設計から *無料枠では過剰* な部分をそぎ落とした最小構成のモノレポ。
 
 ---
 
@@ -328,5 +328,4 @@ jobs:
 ### 自動デプロイ
 
 * **Vercel**: main ブランチへの push で自動デプロイ
-* **Laravel Cloud**: `laravel cloud deploy` コマンドまたは Git 連携
 * **Supabase**: マイグレーションは手動実行推奨 (Free Plan では自動化制限あり)
