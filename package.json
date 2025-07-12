@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-laravel",
+  "private": true,
+  "packageManager": "pnpm@9.1.1",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r --parallel build",
+    "test": "pnpm -r --parallel test",
+    "db:migrate": "supabase db push",
+    "db:reset": "supabase db reset --force"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ]
+}

@@ -176,6 +176,16 @@ cd apps/web && pnpm run dev
 | React Front              | [http://localhost:5173](http://localhost:5173)   |
 | Supabase Studio (Docker) | [http://localhost:54323](http://localhost:54323) |
 
+### 5. 複数人での開発フロー
+
+1. **リポジトリを Fork / Clone** して各自の PC にコピー
+2. `pnpm install` と `composer install` を実行し依存を解決
+3. `.env.example` をコピーして `.env` を作成 (API / Web それぞれ)
+4. 共有 DB を使う場合は `docker compose` を起動し、共通の接続情報を設定
+5. ブランチ運用で開発し、Pull Request ベースでマージ
+
+環境定義はすべてリポジトリに含まれているため、上記手順だけで誰でも同じ環境を再現できます。
+
 ---
 
 ## 🌐 デプロイ
