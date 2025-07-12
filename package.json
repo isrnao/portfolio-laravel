@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel --recursive --workspace-root run dev",
+    "build": "pnpm --parallel --recursive --workspace-root run build",
+    "test": "pnpm --parallel --recursive --workspace-root run test"
+  }
+}
