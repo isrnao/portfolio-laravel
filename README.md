@@ -158,7 +158,17 @@ npx supabase start
 pnpm run db:migrate
 ```
 
-### 4. ローカル実行 (オプション)
+### 4. チーム開発向けセットアップ
+
+複数人で開発する場合は、下記の要領で環境をそろえます。
+
+1. `.env.example` をコピーして各自 `.env` を作成し、DB・Supabase の情報を記述
+2. `pnpm install` と `composer install` を実行して依存関係を同期
+3. Docker を利用する場合は `docker compose up -d` だけで環境が再現可能
+4. Supabase のローカル DB を使う際は `npx supabase start` を実行
+
+これで全員が同一環境で開発できます。
+### 5. ローカル実行 (オプション)
 
 ```bash
 # 一括起動 (pnpm)

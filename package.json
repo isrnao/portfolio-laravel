@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-laravel",
+  "private": true,
+  "packageManager": "pnpm@9.1.1",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel --recursive run dev",
+    "build": "pnpm --parallel --recursive run build",
+    "test": "pnpm --parallel --recursive run test"
+  }
+}

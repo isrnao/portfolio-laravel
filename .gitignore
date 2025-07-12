@@ -1,0 +1,19 @@
+# Node
+node_modules
+pnpm-lock.yaml
+
+# PHP
+/vendor
+/.phpunit.cache
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Supabase generated
+supabase/.temp
