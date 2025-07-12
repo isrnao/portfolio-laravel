@@ -10,4 +10,8 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    server: {
+        port: 5174,
+        strictPort: true, // ポートが使用中の場合、エラーにする（自動で別ポートに変更しない）
+    },
 });

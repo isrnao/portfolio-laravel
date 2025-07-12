@@ -5,6 +5,7 @@ pnpm-lock.yaml
 # PHP
 /vendor
 /.phpunit.cache
+composer.phar
 
 # Environment files
 .env
@@ -17,3 +18,4 @@ yarn-error.log*
 
 # Supabase generated
 supabase/.temp
+supabase/.branches/

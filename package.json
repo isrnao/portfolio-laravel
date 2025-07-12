@@ -8,6 +8,11 @@
   "scripts": {
     "dev": "pnpm --parallel --recursive run dev",
     "build": "pnpm --parallel --recursive run build",
-    "test": "pnpm --parallel --recursive run test"
+    "test": "pnpm --parallel --recursive run test",
+    "db:migrate": "cd apps/api && php artisan migrate",
+    "db:migrate:fresh": "cd apps/api && php artisan migrate:fresh",
+    "db:migrate:fresh:seed": "cd apps/api && php artisan migrate:fresh --seed",
+    "db:seed": "cd apps/api && php artisan db:seed",
+    "db:rollback": "cd apps/api && php artisan migrate:rollback"
   }
 }
