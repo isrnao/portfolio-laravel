@@ -1,0 +1,4 @@
+# Supabase project configuration
+project_id = "your-project-id"
+api_url = "https://your-project.supabase.co"
+api_key = "your-api-key"

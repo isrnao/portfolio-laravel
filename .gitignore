@@ -1,0 +1,19 @@
+# General
+node_modules/
+.env
+.DS_Store
+
+# Laravel
+apps/api/vendor/
+apps/api/node_modules/
+apps/api/storage/
+
+# Vite/React
+apps/web/node_modules/
+dist/
+
+# Supabase
+supabase/.temp/
+
+# Docker
+pgdata/

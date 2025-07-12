@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./docker/app
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html:delegated
+    command: >
+      sh -c "composer install --no-interaction --prefer-dist && \
+             php -S 0.0.0.0:8000 -t public"
+    depends_on:
+      - db
+    environment:
+      APP_ENV: local
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - '8000:8000'
+
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
+volumes:
+  pgdata:

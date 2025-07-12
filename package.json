@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter ./apps/web dev & pnpm --dir ./apps/api serve",
+    "build": "pnpm --filter ./apps/web build",
+    "test": "pnpm --recursive test"
+  }
+}
